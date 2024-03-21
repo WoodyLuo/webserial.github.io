@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Serial</title>
+</head>
+<body>
+    <h1>臺北市私立靜心高中</h1>
+    <p style="display: inline;">請選擇傳輸速率</p>
+    <select id = "baud_rate" name="baud_rate">
+        <option value = "NULL">請選擇速率</option>
+        <option value = "9600">9600</option>
+    </select>
+    <button id="serial_button" type="button">選擇序列埠窗口</button>
+    <table id="serial_data" style="border: 1px solid black; border-collapse: collapse;"></table>
+    <div id="serial_monitor"></div>
+    <script src="./chjhs_web_serial.js"></script>
+</body>
+</html>
